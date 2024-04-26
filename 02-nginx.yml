@@ -1,7 +1,7 @@
 - name: install and run nginx
   hosts: web
   become: yes #it is like -b to get super user
-  tasKS:
+  tasks:
   - name: install nginx
     ansible.builtin.dnf:
       name: nginx
